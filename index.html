@@ -3,24 +3,29 @@
   <title>My Webpage</title>
   <style>
     body {
-        background-image: url(https://rare-gallery.com/uploads/posts/523292-iceland-landscape.jpg);
-        background-size: cover;
+        background-image: url(https://wallpapershome.com/images/pages/pic_h/6295.jpg);
+        background-repeat: repeat-y;
+        background-size: contain;
         overflow: auto;
     }
     .chopperleft {
-        width: 100px;
-        height: 100px;
+        width: 270px;
+        height: 320px;
     }
     .face {
-        width: 100px;
-        height: 100px;
+        width: 380px;
+        height: 400px;
+        border-radius: 180px;
+        border: 5px solid;
+        border-color: rgb(41, 255, 248);
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 560px;
+        margin-right: 560px;
+        margin-top: -200px;
     }
     .chopperright {
-        width: 100px;
-        height: 100px;
+        width: 270px;
+        height: 320px;
     }
     .title {
       text-align: center;
@@ -29,43 +34,61 @@
       height: 35px;
       font-size: xx-large;
       font-family:'Courier New', Courier, monospace;
-      color: rgb(97, 248, 251);
+      color: rgb(41, 255, 248);
       display: block;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 20px;
+      text-shadow: 0 0 7px #57e8e3, 0 0 10px rgb(106, 255, 250);
     }
     .bio {
       width: 680px;
       height: 35px;
+      font-size: large;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
+      text-shadow: 1px 1px 10px rgb(0, 0, 0);
       display: block;
       margin-left: auto;
       margin-right: auto;
       padding: 20px;
-      color:rgb(97, 248, 251)
+      color:rgb(41, 255, 248)
     }
     .favorites {
-      font-size: larger;
+      font-size: x-large;
+      font-weight: bold;
       display: block;
       text-align: center;
+      text-shadow: 1px 1px 20px rgb(0, 0, 0);
       margin-left: auto;
       margin-right: auto;
       font-family: 'Courier New', Courier, monospace;
-      padding-block: 50px;
-      color:rgb(97, 248, 251)
+      margin-top: 100px;
+      color:rgb(41, 255, 248)
     }
     li {
         font-size: larger;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color:rgb(97, 248, 251)
+        color: rgb(41, 255, 248)
+    }
+    ul {
+      display: inline-block;
+      text-align: left; 
+    }
+    .list{ 
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    a {
+      color: red;
     }
   </style>
   <body>
     <div class="column">
+      <flex> <img style="float:right; margin-left: 500px;" src="images/tony-tony-chopper right.png" class="chopperright"></flex>
         <img src="images/tony-tony-chopper-left.png" class="chopperleft">
         <img src="images/IMG_1103.JPG" class="face">
-        <img style="float:right; margin-left: 500px;" src="images/tony-tony-chopper right.png" class="chopperright">
     </div>
 
   <header class="title">Heyyo! My name is Pricilla Torres ☺️</header>
@@ -75,12 +98,13 @@
     This summer, I plan on hanging out with my chums, catch up on reading, and visit my family in Mexico at the end of July. 
     If you would like to chat or play goofy games, my Discord is: cinnabuttz#9488.</p>
 
-  <header class="favorites">Here are a couple things about me...</header>
-
+  <em><header class="favorites">Here's a couple things about me...</header></em>
+<div class="list">
   <ul>
     <li>I'm currently listening to Death Grips and Yves Tumor <a href="https://open.spotify.com/user/1250487197?si=df5016906346452e" target="_blank">HERE DA SPOTIFY LINK </a></li>
-    <li>My favorite One Piece character is Chopper</li>
+    <li>My favorite One Piece character is Chopper :3</li>
     <li>I would love to travel to Iceland someday (peep the background)</li>
   </ul>
+</div>
 </body>
 </html>
