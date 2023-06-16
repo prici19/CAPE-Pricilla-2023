@@ -5,7 +5,7 @@
     body {
         background-image: url(https://wallpapershome.com/images/pages/pic_h/6295.jpg);
         background-repeat: repeat-y;
-        background-size: contain;
+        background-size: cover;
         overflow: auto;
     }
     .chopperleft {
@@ -84,10 +84,75 @@
       padding-bottom: 20px;
     }
     a {
-      color: red;
+      color: chartreuse;
     }
+    #overlay{
+      display: none;
+      position: fixed; 
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-color:rgb(0, 0, 0.5)
+    }
+    #modal{ 
+      max-width: 600px;
+      height: 300px;
+      margin:auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    #open-modal {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      outline: none;
+      color: #fff;
+      background-color: rgb(115, 220, 10);
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 9px rgb(191, 255, 126);
+    }
+    #open-modal:hover {background-color: rgb(99, 189, 9)}
+    #open-modal:active {
+      background-color: rgb(78, 147, 9);
+      box-shadow: 0 5px rgb(151, 203, 100);
+      transform: translateY(4px);
+    }
+    #close-modal {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      display: block;
+      margin-top: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+      background: none;
+      color: red;
+      font-size: 50px;
+      cursor: pointer;
+      text-align: center;
+      border:none;
+    }
+    #close-modal:hover {
+      color: rgb(169, 7, 7)}
   </style>
   <body>
+    <div id="overlay">
+      <img src="images/rasputin.jpg">
+      <div id="modal">
+        <button id="close-modal">You have been reminded.</button>
+       </div>
+      </div>
+
     <div class="column">
       <flex> <img style="float:right; margin-left: 500px;" src="images/tony-tony-chopper right.png" class="chopperright"></flex>
         <img src="images/tony-tony-chopper-left.png" class="chopperleft">
@@ -106,8 +171,20 @@
   <ul>
     <li>I'm currently listening to Death Grips and Yves Tumor <a href="https://open.spotify.com/user/1250487197?si=df5016906346452e" target="_blank">HERE DA SPOTIFY LINK </a></li>
     <li>My favorite One Piece character is Chopper :3</li>
-    <li>I would love to travel to Iceland someday (peep the background)</li>
+    <li>I would love to travel to Iceland someday *peep the background*</li>
   </ul>
 </div>
+
+<button id="open-modal"> ☞ Rasputin Reminder ☜</button>
+
+<script>
+  const overlay = document.querySelector("#overlay");
+  document.querySelector("#open-modal").addEventListener("click", ()=> {
+    overlay.style.display="block";
+  })
+  document.querySelector("#close-modal"). addEventListener("click", ()=> {
+    overlay.style.display= "none";
+  })
+</script>
 </body>
 </html>
