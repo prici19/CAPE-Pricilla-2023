@@ -1,0 +1,22 @@
+.user-profile{
+border: 10px solid green;
+width: 500px;
+height: 300px;
+border-radius: 100px;
+margin-bottom: 10px;
+margin-top: 10px;
+font-family: 'Courier New', Courier, monospace;
+}
+.user-profile h3{
+    margin-left: 200px;
+}
+.user-profile p{
+    margin-left: 80px;
+}
+.user-profile img {
+    height: 120px;
+    width: 100px;
+    margin-left: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
