@@ -1,23 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Pee from './Pee';
-import chopper from "./chopper.jpg";
-import lean from "./yunglean.png"
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Navbar from './components/NavBar';
+import "./App.css";
 
-const person = [{
-  name: "Pricilla",
-  email: "pitorres41@gmail",
-  age: "20",
-  emoji: chopper,
-},
-{
-  name:"Grandpa",
-  email:"coolpaw@gmail.com",
-  age: "69",
-  emoji:lean,
-}]
+import Contact from "./Contact";
+import Home from "./Home";
+import About from "./About";
 
 function App() {
-return <Pee users={person}/>
-}
+  return (<BrowserRouter>
+    <Navbar/> <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/About" element={<About/>} />
+      <Route path="/Contact" element={<Contact/>} />
+    </Routes>
+    </BrowserRouter> 
+    );
+  }
 export default App;
