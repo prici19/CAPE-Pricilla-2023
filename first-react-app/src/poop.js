@@ -1,4 +1,4 @@
-import "./Vomit.css"
+import "./Blog.css"
 function Poop ({ user }) {
     return (
       <div className="user-profile">
